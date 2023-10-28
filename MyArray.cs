@@ -44,6 +44,8 @@ namespace PR_4 {
             (var neg, var pos) = FindIndex();
             if (neg == -1)
                 return Arr;
+            if (pos > Arr.Length)
+                return new int[]{};
             
             for (var i = 0; i < Arr.Length; i++) {
                 if (i == neg)
